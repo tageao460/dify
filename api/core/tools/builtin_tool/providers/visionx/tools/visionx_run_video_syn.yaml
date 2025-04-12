@@ -1,0 +1,96 @@
+identity:
+  name: visionx_run_video_syn
+  author: wjl
+  label:
+    en_US: VisionX Run Video Syn
+    zh_Hans: 视觉X合成视频
+    pt_BR: Divisão de vídeo VisionX
+  icon: icon.svg
+description:
+  human:
+    en_US: VisionX Run Video Syn
+    zh_Hans: 视觉X合成视频
+    pt_BR: Divisão de vídeo VisionX
+  llm: A tool when you want to run video syn.
+parameters:
+  - name: video_metadata
+    type: string
+    required: true
+    label:
+      en_US: video_metadata
+      zh_Hans: 视频元数据
+      pt_BR: metadados do vídeo
+    human_description:
+      en_US: video_metadata
+      zh_Hans: 视频元数据
+      pt_BR: metadados do vídeo
+    form: llm
+  - name: canvas_width
+    type: string
+    required: false
+    label:
+      en_US: canvas_width
+      zh_Hans: 画布宽度
+      pt_BR: largura do canvas
+    form: llm
+  - name: canvas_height
+    type: string
+    required: false
+    label:
+      en_US: canvas_height
+      zh_Hans: 画布高度
+      pt_BR: altura do canvas
+    form: llm
+  - name: task_id
+    type: string
+    required: true
+    label:
+      en_US: task_id
+      zh_Hans: 任务ID
+      pt_BR: ID da tarefa
+    form: llm
+  - name: add_title
+    type: boolean
+    required: false
+    label:
+      en_US: add_title
+      zh_Hans: 是否添加标题
+      pt_BR: adicionar título
+    default: true
+    form: llm
+  - name: add_danmu
+    type: boolean
+    required: false
+    label:
+      en_US: add_danmu
+      zh_Hans: 是否添加弹幕
+      pt_BR: adicionar dança
+    default: false
+    form: llm
+  - name: add_bgm
+    type: boolean
+    required: false
+    label:
+      en_US: add_bgm
+      zh_Hans: 是否添加背景音乐
+      pt_BR: adicionar música de fundo
+    default: true
+    form: llm
+  - name: add_tts
+    type: boolean
+    required: false
+    label:
+      en_US: add_tts
+      zh_Hans: 是否添加TTS
+      pt_BR: adicionar TTS
+    default: true
+    form: llm
+  - name: add_subtitle
+    type: boolean
+    required: false
+    label:
+      en_US: add_subtitle
+      zh_Hans: 是否添加字幕
+      pt_BR: adicionar subtítulo
+    default: true
+    form: llm

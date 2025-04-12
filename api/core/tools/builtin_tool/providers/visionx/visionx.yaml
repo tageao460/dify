@@ -1,0 +1,15 @@
+identity:
+  author: wjl
+  name: visionx
+  label:
+    en_US: VisionX
+    zh_Hans: 视觉X
+    pt_BR: VisionX
+  description:
+    en_US: VisionX service toolkit.
+    zh_Hans: 视觉X服务工具包。
+    pt_BR: Kit de ferramentas de serviço VisionX.
+  icon: icon.svg
+  tags:
+    - utilities
+credentials_for_provider: {}

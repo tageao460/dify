@@ -1,0 +1,39 @@
+identity:
+  name: visionx_call_gemini_single
+  author: wjl
+  label:
+    en_US: VisionX Call Gemini Single
+    zh_Hans: 视觉X调用Gemini单个视频
+    pt_BR: Divisão de vídeo VisionX
+  icon: icon.svg
+description:
+  human:
+    en_US: VisionX Call Gemini Single
+    zh_Hans: 视觉X调用Gemini单个视频
+    pt_BR: Divisão de vídeo VisionX
+  llm: A tool when you want to call gemini single.
+parameters:
+  - name: prompt
+    type: string
+    required: true
+    label:
+      en_US: prompt
+      zh_Hans: 提示词
+      pt_BR: prompt
+    human_description:
+      en_US: prompt
+      zh_Hans: 提示词
+      pt_BR: prompt
+    form: llm
+  - name: gemini_video_name
+    type: string
+    required: true
+    label:
+      en_US: gemini_video_name
+      zh_Hans: gemini视频名称
+      pt_BR: nome do vídeo gemini
+    human_description:
+      en_US: gemini_video_name
+      zh_Hans: gemini视频名称
+      pt_BR: nome do vídeo gemini
+    form: llm

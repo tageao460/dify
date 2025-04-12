@@ -1,0 +1,51 @@
+identity:
+  name: visionx_gemini_upload_video
+  author: wjl
+  label:
+    en_US: VisionX Gemini Upload Video
+    zh_Hans: 视觉X上传Gemini视频
+    pt_BR: Divisão de vídeo VisionX
+  icon: icon.svg
+description:
+  human:
+    en_US: VisionX Gemini Upload Video
+    zh_Hans: 视觉X上传Gemini视频
+    pt_BR: Divisão de vídeo VisionX
+  llm: A tool when you want to upload gemini video.
+parameters:
+  - name: video_oss_path
+    type: string
+    required: true
+    label:
+      en_US: video_oss_path
+      zh_Hans: 视频oss路径
+      pt_BR: caminho do vídeo oss
+    human_description:
+      en_US: video_oss_path
+      zh_Hans: 视频oss路径
+      pt_BR: caminho do vídeo oss
+    form: llm
+  - name: canvas_width
+    type: string
+    required: false
+    label:
+      en_US: canvas_width
+      zh_Hans: 画布宽度
+      pt_BR: largura do canvas
+    form: llm
+  - name: canvas_height
+    type: string
+    required: false
+    label:
+      en_US: canvas_height
+      zh_Hans: 画布高度
+      pt_BR: altura do canvas
+    form: llm
+  - name: task_id
+    type: string
+    required: true
+    label:
+      en_US: task_id
+      zh_Hans: 任务ID
+      pt_BR: ID da tarefa
+    form: llm

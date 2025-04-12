@@ -1,0 +1,35 @@
+identity:
+  name: visionx_call_tts
+  author: wjl
+  label:
+    en_US: VisionX Call TTS
+    zh_Hans: 视觉X调用TTS
+    pt_BR: Divisão de vídeo VisionX
+  icon: icon.svg
+description:
+  human:
+    en_US: VisionX Call TTS
+    zh_Hans: 视觉X调用TTS
+    pt_BR: Divisão de vídeo VisionX
+  llm: A tool when you want to call tts.
+parameters:
+  - name: subtitle_matadata
+    type: string
+    required: true
+    label:
+      en_US: subtitle_matadata
+      zh_Hans: 字幕脚本
+      pt_BR: script de legendas
+    human_description:
+      en_US: subtitle_matadata
+      zh_Hans: 字幕脚本
+      pt_BR: script de legendas
+    form: llm
+  - name: task_id
+    type: string
+    required: true
+    label:
+      en_US: task_id
+      zh_Hans: 任务ID
+      pt_BR: ID da tarefa
+    form: llm
